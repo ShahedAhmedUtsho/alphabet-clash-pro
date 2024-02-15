@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Clash Pro</title>
+    <link rel="stylesheet" href="./output/output.css">
+    <style>
+        @font-face {
+            font-family: anton;
+            src: url(./assist/font/Anton-Regular.ttf);
+        }
+        .anton{
+            font-family: anton, Helvetica, sans-serif;
+        }
+        .textLarge{
+            font-size: clamp(6.875rem,calc((46/16 * 1rem) + (1vw - .62rem) * (100 * ((56/16) - (46/16))/(76.25 - 62))),3.5rem);line-height: .85;
+            text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.58);
+            
+        }
+        
+        .p{
+            font-size: clamp(1rem,calc((16/16 * 1rem) + (1vw - .62rem) * (100 * ((18/16) - (16/16))/(76.25 - 62))),1.125rem);
+line-height:26px;
+
+}
+
+        
+@media screen and (max-width:600px){
+    .textLarge{
+        font-size: clamp(3rem,calc((32/16 * 1rem) + (1vw - .2rem) * (100 * ((46/16) - (32/16))/(26.875 - 20))),2.875rem);
+        }
+    }
+    </style>
+</head>
+<body >
+    <main class=" h-screen  bg-[url('/assist/images/background.png')]   bg-[#010313] bg-no-repeat bg-center bg-contain ">
+<br>
+<section class="wellcome text-center     justify-center  mt-[33vh] max-w-[700px] mx-auto  hidden">
+    <h1 class="anton text-white textLarge mb-8  ">ALPHABET CLASH
+        </h1>
+        <h3 class="p text-white mb-8">
+            Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+        </h3>
+        <button id="play" class="btn bg-white text-black hover:text-white" type="button">
+Play now
+        </button>
+
+</section>
+
+
+<section class="playground  text-center  mt-[8vh] min-h-96 px-10  lg:mx-20 ">
+    <div class="screan border-[15px] border-[#000000b3] border-solid lg:min-h-72 min-h-60 bg-[#ffffffb3] md:max-w-[800px] mx-auto md:mb-12 mb-12 flex justify-center items-center  ">
+        <div id="Alphabet" class=" uppercase text-[100px] font-serif ">
+            y
+        </div>
+
+
+
+    </div>
+
+    <div id="keybord" class="md:scale-110">
+
+        <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">q</kbd>
+            <kbd class="kbd">w</kbd>
+            <kbd class="kbd">e</kbd>
+            <kbd class="kbd">r</kbd>
+            <kbd class="kbd">t</kbd>
+            <kbd class="kbd">y</kbd>
+            <kbd class="kbd">u</kbd>
+            <kbd class="kbd">i</kbd>
+            <kbd class="kbd">o</kbd>
+            <kbd class="kbd">p</kbd>
+          </div> 
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">a</kbd>
+            <kbd class="kbd">s</kbd>
+            <kbd class="kbd">d</kbd>
+            <kbd class="kbd">f</kbd>
+            <kbd class="kbd">g</kbd>
+            <kbd class="kbd">h</kbd>
+            <kbd class="kbd">j</kbd>
+            <kbd class="kbd">k</kbd>
+            <kbd class="kbd">l</kbd>
+          </div> 
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">z</kbd>
+            <kbd class="kbd">x</kbd>
+            <kbd class="kbd">c</kbd>
+            <kbd class="kbd">v</kbd>
+            <kbd class="kbd">b</kbd>
+            <kbd class="kbd">n</kbd>
+            <kbd class="kbd">m</kbd>
+            <kbd class="kbd">/</kbd>
+          </div>
+
+
+    </div>
+
+    <div class="button-div  flex justify-between  md:max-w-[800px] mx-auto md:mb-12 mb-12 mt-10 lg:pt-20">
+        <button class="btn rounded-full w-32 text-base  bg-[#894189] text-white border-none rounded-md">
+            Life
+            <img src="./assist/images/Group 23.svg" alt="">
+            <span>
+                1
+            </span>
+            
+        </button>
+        <button class="btn rounded-full w-32 p-1 text-base  bg-[#360490] text-white border-none rounded-md">
+            Score
+            <img src="./assist/images/monetization_on.svg" alt="">
+            <span>
+                1
+            </span>
+            
+        </button>
+        
+         
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
